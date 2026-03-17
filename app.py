@@ -45,7 +45,7 @@ option = st.sidebar.radio(
 if option == "Overview":
     st.subheader("Dataset Preview")
 
-    if st.checkbox("Show Raw Data"):
+    if st.checkbox("Show Processed Data"):
         st.dataframe(df)
 
     csv = df.to_csv(index=False).encode('utf-8')
