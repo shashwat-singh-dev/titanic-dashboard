@@ -13,6 +13,17 @@ The dashboard allows users to interactively analyze how different factors such a
 
 ---
 
+## Screenshots
+
+### Overview
+[Overview](overview.png)
+
+### Gender Analysis
+[Gender](gender.png)
+
+### Fare Analysis
+[Fare](fare.png)
+
 ##  Features
 - 🔹 Data cleaning and preprocessing
 - 🔹 Feature engineering (Gender, Class, Family Size)
