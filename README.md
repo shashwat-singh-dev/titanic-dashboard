@@ -72,7 +72,8 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 ## Author
-Shashwat Singh
+
+**Shashwat Singh**  
 B-Tech Student | Aspiring Data Analyst | ML Engineer
 
 
