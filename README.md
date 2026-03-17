@@ -25,12 +25,12 @@ The dashboard allows users to interactively analyze how different factors such a
 ![Fare](fare.png)
 
 ##  Features
-- 🔹 Data cleaning and preprocessing
-- 🔹 Feature engineering (Gender, Class, Family Size)
-- 🔹 Interactive sidebar filters
-- 🔹 Dynamic visualizations
-- 🔹 Key insights extraction
-- 🔹 Fully deployed web application using Streamlit
+-  Data cleaning and preprocessing
+-  Feature engineering (Gender, Class, Family Size)
+-  Interactive sidebar filters
+-  Dynamic visualizations
+-  Key insights extraction
+-  Fully deployed web application using Streamlit
 
 ---
 
