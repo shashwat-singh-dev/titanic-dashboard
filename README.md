@@ -16,13 +16,13 @@ The dashboard allows users to interactively analyze how different factors such a
 ## Screenshots
 
 ### Overview
-[Overview](overview.png)
+![Overview](overview.png)
 
 ### Gender Analysis
-[Gender](gender.png)
+![Gender](gender.png)
 
 ### Fare Analysis
-[Fare](fare.png)
+![Fare](fare.png)
 
 ##  Features
 - 🔹 Data cleaning and preprocessing
