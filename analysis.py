@@ -31,7 +31,8 @@ def clean_data(df):
     df['Fare_log'] = np.log1p(df['Fare'])
     
     # Drop useless columns
-    df.drop(columns=['Cabin', 'PassengerId', 'Name', 'Ticket'], inplace=True)
+    cols_to_drop = ['Cabin', 'PassengerId', 'Name', 'Ticket']
+    df.drop(columns=[col for col in cols_to_drop if col in df.columns], inplace=True)
     
     # Feature Engineering
     df['FamilySize'] = df['SibSp'] + df['Parch'] + 1
