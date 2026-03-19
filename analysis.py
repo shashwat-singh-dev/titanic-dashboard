@@ -36,8 +36,9 @@ def clean_data(df):
     df.drop(columns=[col for col in cols_to_drop if col in df.columns], inplace=True)
     
     # Feature Engineering
-    df['FamilySize'] = df['SibSp'] + df['Parch'] + 1
-    df['IsAlone'] = (df['FamilySize'] == 1).astype(int)
+    if 'SibSp' in df.columns and 'Parch' in df.columns:
+        df['FamilySize'] = df['SibSp'] + df['Parch'] + 1
+        df['IsAlone'] = (df['FamilySize'] == 1).astype(int)
     
     # Encoding
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
