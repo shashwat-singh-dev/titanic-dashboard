@@ -21,8 +21,9 @@ def clean_data(df):
     df = df.loc[:, ~df.columns.duplicated()]
     
     # Fill missing values
-  if 'Age' in df.columns:
+    if 'Age' in df.columns:
     df['Age'] = df['Age'].fillna(df['Age'].median())
+    if 'Embarked' in df.columns:
     df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
 
     #Log Transform
