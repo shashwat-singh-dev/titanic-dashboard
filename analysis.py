@@ -20,25 +20,19 @@ def clean_data(df):
     # Remove duplicate columns
     df = df.loc[:, ~df.columns.duplicated()]
     
-    
-    if 'Age' in df.columns:
-        df['Age'] = df['Age'].fillna(df['Age'].median())
-
-    if 'Embarked' in df.columns:
-        df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
+    # Fill missing values
+    df['Age'] = df['Age'].fillna(df['Age'].median())
+    df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
 
     #Log Transform
-    if 'Fare' in df.columns:
-        df['Fare_log'] = np.log1p(df['Fare'])
+    df['Fare_log'] = np.log1p(df['Fare'])
     
     # Drop useless columns
-    cols_to_drop = ['Cabin', 'PassengerId', 'Name', 'Ticket']
-    df.drop(columns=[col for col in cols_to_drop if col in df.columns], inplace=True)
+    df.drop(columns=['Cabin', 'PassengerId', 'Name', 'Ticket'], inplace=True)
     
     # Feature Engineering
-    if 'SibSp' in df.columns and 'Parch' in df.columns:
-        df['FamilySize'] = df['SibSp'] + df['Parch'] + 1
-        df['IsAlone'] = (df['FamilySize'] == 1).astype(int)
+    df['FamilySize'] = df['SibSp'] + df['Parch'] + 1
+    df['IsAlone'] = (df['FamilySize'] == 1).astype(int)
     
     # Encoding
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
