@@ -27,6 +27,7 @@ def clean_data(df):
     df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
 
     #Log Transform
+    if 'Fare' in df.columns:
     df['Fare_log'] = np.log1p(df['Fare'])
     
     # Drop useless columns
