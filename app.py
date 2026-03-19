@@ -88,4 +88,3 @@ elif option == "Family":
     sns.countplot(x='FamilySize', hue='Survived', data=df,order=sorted(df['FamilySize'].unique()), ax=ax)
     ax.set_title("Survival by Family Size")
     st.pyplot(fig)
-    
