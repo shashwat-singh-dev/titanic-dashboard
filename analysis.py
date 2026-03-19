@@ -20,15 +20,16 @@ def clean_data(df):
     # Remove duplicate columns
     df = df.loc[:, ~df.columns.duplicated()]
     
-    # Fill missing values
+    
     if 'Age' in df.columns:
-    df['Age'] = df['Age'].fillna(df['Age'].median())
+        df['Age'] = df['Age'].fillna(df['Age'].median())
+
     if 'Embarked' in df.columns:
-    df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
+        df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
 
     #Log Transform
     if 'Fare' in df.columns:
-    df['Fare_log'] = np.log1p(df['Fare'])
+        df['Fare_log'] = np.log1p(df['Fare'])
     
     # Drop useless columns
     cols_to_drop = ['Cabin', 'PassengerId', 'Name', 'Ticket']
