@@ -71,7 +71,7 @@ The dashboard allows users to interactively analyze how different factors such a
 pip install -r requirements.txt
 streamlit run app.py
 ```
-## Authorrrrrrrrrrrrr
+## Author
 
 **Shashwat Singh**  
 B-Tech Student | Aspiring Data Analyst | ML Engineer
