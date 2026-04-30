@@ -13,7 +13,7 @@ The dashboard allows users to interactively analyze how different factors such a
 
 ---
 
-## Screenshotsssssssssssssssss
+## Screenshots
 
 ### Overview
 ![Overview](overview.png)
