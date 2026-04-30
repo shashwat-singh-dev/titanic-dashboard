@@ -8,7 +8,7 @@ The dashboard allows users to interactively analyze how different factors such a
 
 ---
 
-##  Live Demoooooooooooooooooooooooo
+##  Live Demo
 🔗 (https://titanic-dashboard-mvkxqx5bjlc5f5abzusxgq.streamlit.app)
 
 ---
